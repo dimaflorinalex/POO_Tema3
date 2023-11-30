@@ -82,6 +82,8 @@ void Calculator::ShowMainMenuView() {
 }
 
 void Calculator::ShowClosingView() {
+    delete instance;
+
     cout << endl;
     cout << "Calculatorul se stinge..." << endl;
 }
