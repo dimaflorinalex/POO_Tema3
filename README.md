@@ -3,7 +3,7 @@
 
 Titlu: Calculator matrice rare
 
-Descriere: Calculator de matrice rare cu numar restrans de operatii (suma, produs) si interfata in linie de comanda
+Descriere: Calculator de matrice rare cu numar restrans de operatii (suma, produs) si CLI
 
 ### Functiile aplicatiei:
 0. Stinge calculatorul > Inchide aplicatia
