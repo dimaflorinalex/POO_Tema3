@@ -99,7 +99,7 @@ SparseMatrix<T> Calculator::ReadFile(const string & filename) const {
     ifstream input;
     input.open(filepath);
 
-    SparseMatrix<T> matrix(0, 0);
+    SparseMatrix<T> matrix;
 
     if (!input) {
         return matrix;
