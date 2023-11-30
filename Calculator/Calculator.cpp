@@ -74,7 +74,7 @@ void Calculator::ShowMainMenuView() {
             }
         }
         catch (invalid_argument & ex) {
-            cout << "Eroare: " << ex.what() << endl;
+            cout << "Eroare: " << ex.what() << endl << endl;
             choice = -1;
         }
         
