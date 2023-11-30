@@ -17,4 +17,4 @@ Descriere: Calculator de matrice rare cu numar restrans de operatii (suma, produ
 1. Calculator - Wrapper pentru functiile ce tin de interfata calculatorului (navigatie, IO, operare date). Design patterns: Singleton, State
 2. SparseMatrix, Direction, Value - Logica pentru matrice rara (stocare, parcurgere, adunare, inmultire etc)
 
-- Observatie: Pentru date de tip "unsigned char" exista o specializare a functiei de atribuire valori in matrice - maparea valorilor in plaja 'a' - 'z'
+- Observatie: Pentru date de tip "unsigned char" exista o specializare a functiei de atribuire valori in matrice - maparea valorilor in plaja 'a' - 'z', astfel incat obtinem o alta forma de calcul/reprezentare numerica (in cazul acesta, circulara).
