@@ -29,7 +29,7 @@ void Calculator::Init() {
 
 void Calculator::ShowOpeningView() {
     cout << "Calculatorul se aprinde..." << endl;
-    cout << "Tipul de date setat: " << this->_stateDataType << endl;
+    cout << "Tipul de date setat = " << this->_stateDataType << endl;
     ShowMainMenuView();
 }
 
@@ -123,9 +123,9 @@ SparseMatrix<T> Calculator::ReadFile(const string & filename) const {
 }
 
 void Calculator::ShowChangeStateDataTypeView() {
-    string datatype;
-    cout << "Tipul de date curent = " << this->_stateDataType << endl;
+    cout << endl << "Tipul de date curent = " << this->_stateDataType << endl;
     cout << "Seteaza alt tip de date (int, double, uchar) = ";
+    string datatype;
     cin >> datatype;
 
     if (datatype == "int" || datatype == "double" || datatype == "uchar") {
