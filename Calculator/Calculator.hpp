@@ -11,22 +11,18 @@ class Calculator {
         const static string FOLDER_PATH;
         const static string FILE_EXTENSION;
         const static string FILE_DELIMITER;
+        
         static Calculator * instance;
-        Calculator();
+        string _stateDataType;
+
+        Calculator(const string stateDataType = "int");
 
         void ShowOpeningView();
-
         void ShowMainMenuView();
-
         void ShowClosingView();
-
-        void ShowComputationView(const int operationCode);
-
-        template<typename T>
-        void ShowComputationView2(const int operationCode);
-
-        template<typename T>
-        SparseMatrix<T> ReadFile(const string & filename) const;
+        void ShowChangeStateDataTypeView();
+        template<typename T> void ShowComputationView(const int operationCode);
+        template<typename T> SparseMatrix<T> ReadFile(const string & filename) const;
 
     public:
         Calculator(Calculator & other) = delete;
